@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modal Window</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="title-container">
+            <h3 class="title">Player Cards</h3>
+        </div>
+
+        <button class="button" onclick="displayModal()">Virat Kohli</button>
+
+        <div class="modal-container hidden" id="virat">
+            <div class="modal-header">
+                <h3 class="modal-title">Virat Kohli</h3>
+                <p class="modal-description">Cricketer for ICT & RCB</p>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img src="./media/kohli.jpg" alt="" class="modal-image">
+                </div>
+
+                <div class="modal-data">
+                    <p><span>Matches : </span>497</p>
+                    <p><span>Innings : </span>555</p>
+                    <p><span>Runs : </span>25322</p>
+                    <p><span>HS : </span>254*</p>
+                    <p><span>Average : </span>53.53</p>
+                    <p><span>50s : </span>130</p>
+                    <p><span>100s : </span>75</p>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-circle-xmark" onclick="removeModal()"></i>
+        </div>
+
+        <script src="./script.js"></script>        
+    </body>
+</html>
